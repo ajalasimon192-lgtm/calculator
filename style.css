@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(195, 188, 188);
+}
+
+main {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+}
+
+input {
+    background-color: rgb(161, 160, 160);
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    text-align: right;
+    border: none;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+main .buttons {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+button {
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(106, 105, 105);
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(137, 136, 136);
+}
+
+button:active {
+    background-color: rgb(206, 206, 206);
+}
+
+button.operators {
+    background-color: orange;
+}
+
+button.operators:hover {
+    background-color: rgb(223, 179, 97);
+}
+
+@media screen and (max-width: 767px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+    
+    input {
+        font-size: 50px;
+    }
+    
+    .buttons {
+        height: 100%;
+        width: 100%;
+    }
+
+}
